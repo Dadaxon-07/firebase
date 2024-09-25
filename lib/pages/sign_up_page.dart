@@ -17,11 +17,11 @@ class _SignUpPageState extends State<SignUpPage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            'Firebase',
+            'Sign Up',
             style: TextStyle(
-                color: Colors.orange,
+                color: Colors.green.shade800,
                 fontSize: 26,
-                fontWeight: FontWeight.w700),
+                fontWeight: FontWeight.w900),
           ),
           SizedBox(
             height: 20,
@@ -32,7 +32,7 @@ class _SignUpPageState extends State<SignUpPage> {
             padding: EdgeInsets.symmetric(horizontal: 12),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                border: Border.all(width: 2, color: Colors.grey)),
+                border: Border.all(width: 2, color: Colors.green)),
             child: TextField(
               decoration:
                   InputDecoration(hintText: "Name", border: InputBorder.none),
@@ -47,7 +47,7 @@ class _SignUpPageState extends State<SignUpPage> {
             padding: EdgeInsets.symmetric(horizontal: 12),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                border: Border.all(width: 2, color: Colors.grey)),
+                border: Border.all(width: 2, color: Colors.green)),
             child: TextField(
               decoration:
                   InputDecoration(hintText: "Email", border: InputBorder.none),
@@ -62,7 +62,7 @@ class _SignUpPageState extends State<SignUpPage> {
             padding: EdgeInsets.symmetric(horizontal: 12),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                border: Border.all(width: 2, color: Colors.grey)),
+                border: Border.all(width: 2, color: Colors.green)),
             child: TextField(
               decoration: InputDecoration(
                   hintText: "Password", border: InputBorder.none),
@@ -77,11 +77,15 @@ class _SignUpPageState extends State<SignUpPage> {
               margin: EdgeInsets.symmetric(horizontal: 20),
               height: 56,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20), color: Colors.blue),
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.green.shade800),
               child: Center(
                 child: Text(
                   "Sign Up",
-                  style: TextStyle(color: Colors.white, fontSize: 18),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold),
                 ),
               ),
             ),

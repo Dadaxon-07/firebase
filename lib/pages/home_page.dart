@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 class HomePage extends StatefulWidget {
+  static final String id = 'home_page';
   const HomePage({super.key});
 
   @override

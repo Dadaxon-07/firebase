@@ -1,3 +1,4 @@
+import 'package:firebase/pages/home_page.dart';
 import 'package:firebase/pages/splash_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
@@ -32,6 +33,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: SplashPage(),
+      routes: {
+       HomePage.id:(context) => HomePage()
+      },
     );
   }
 }
